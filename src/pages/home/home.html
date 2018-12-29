@@ -1,54 +1,42 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
-</ion-header>
+    <ion-navbar>
+       <ion-title>Home</ion-title>
+    </ion-navbar>
+ </ion-header>
 
-<ion-content padding>
-  
-  <img src="https://www.saferidecarservice.com/sites/all/themes/sras_design_second/img/mobile-logo.png">
+ <ion-content padding>
 
-  <form>
-    <ion-item>
-      <ion-label>Email</ion-label>
-      <ion-input type="email"></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-label>Password</ion-label>
-      <ion-input type="password"></ion-input>
-    </ion-item>
+    <div class="logo-wrap">
+       <img class="logo-login"src="https://www.saferidecarservice.com/sites/all/themes/sras_design_second/img/mobile-logo.png">
+    </div>
+    
+    <form>
+       <ion-item no-padding class="user-input-wrap">
+          <ion-label class="icon-label"><i class="far fa-user-circle"></i></ion-label>
+          <ion-input type="email"></ion-input>
+       </ion-item>
+       <ion-item no-padding class="user-input-wrap">
+          <ion-label class="icon-label"><i class="fas fa-lock"></i></ion-label>
+          <ion-input type="password"></ion-input>
+       </ion-item>
+       <ion-row>
+          <button  class="login-btn-bl" ion-button block (click)="login()"> Log in </button>
+       </ion-row>
+    </form>
 
     <ion-row>
-      <ion-col text-center>
-        <button ion-button block (click)="login()">
-          Login
-        </button>
-      </ion-col>
+       <ion-col col-6 text-center>
+          <button  class="left-btn-bl cm-btn" (click)="onForgotPassword()"> Create Account </button>
+       </ion-col>
+       <ion-col col-6 text-center>
+          <button  class="right-btn-bl cm-btn" (click)="onForgotPassword()">  Forgot password? </button>
+       </ion-col>
     </ion-row>
 
+    <h1 class="hr-line">or</h1>
 
-
-  </form>
-  <ion-row>
-    <ion-col text-center>
-      <H2 ion-button clear color="light" (click)="onForgotPassword()">
-        Create Account?
-      </H2>
-    </ion-col>
-
-    <ion-col text-center>
-      <H2 ion-button clear color="light" (click)="onForgotPassword()">
-        Forgot password?
-      </H2>
-    </ion-col>
-  </ion-row>
-  <p>or</p>
-  <hr>
-
-  <ion-col text-center>
-    <H2 ion-button clear color="light" (click)="onForgotPassword()">
-      Create Driver Account?
-    </H2>
-  </ion-col>
-</ion-content>
+    <ion-row>
+       <button  class="login-btn-bl" ion-button block (click)="onForgotPassword()"> Become a driver </button>
+    </ion-row>
+    
+ </ion-content>

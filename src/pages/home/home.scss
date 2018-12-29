@@ -1,13 +1,73 @@
 page-home {
-    ion-app._gmaps_cdv_ .nav-decor{
-        background-color: transparent !important;
-      }
-       
-      home-page {
-       
-          #map {
-              height: 100%;
-          }
-       
-      }
+	.logo-wrap {
+		text-align: center;
+		margin: 20px 0px 40px;
+		.logo-login {
+			width: 40%;
+		}
+	}
+	.user-input-wrap {
+		color: #fff;
+		margin-bottom: 15px;
+		background-color: #327496;
+		.item-inner {
+			border-bottom: none!important;
+		}
+		.icon-label {
+			width: 50px;
+			text-align: center;
+			color: #fff!important;
+		}
+	}
+	.login-btn-bl {
+        padding: 23px;
+        box-shadow: none;
+		margin-bottom: 20px;
+        border: 2px solid #fff;
+		background-color: transparent;
+	}
+	.cm-btn {
+        color: #fff;
+        padding: 20px;
+		box-shadow: none;
+		text-transform: capitalize;
+		background-color: transparent;
+	}
+	.left-btn-bl {
+		float: left;
+		padding-left: 0px;
+	}
+	.right-btn-bl {
+		float: right;
+		padding-right: 0px;
+	}
+	.hr-line {
+		margin: 0px;
+		display: flex;
+		color: #fff;
+		font-size: 20px;
+		font-weight: normal;
+		margin-bottom: 20px;
+	}
+	.hr-line:before {
+		margin: auto 0.85em auto 0px;
+	}
+	.hr-line:after {
+		margin: auto 0 auto 0.85em;
+	}
+	.hr-line:before,
+	.hr-line:after {
+		color: white;
+		content: '';
+		flex: 1;
+		border-bottom: 1px solid;
+	}
+	ion-app._gmaps_cdv_ .nav-decor {
+		background-color: transparent !important;
+	}
+	home-page {
+		#map {
+			height: 100%;
+		}
+	}
 }
