@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Passenger Dashboard</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <div style="width: 100%"><iframe width="100%" height="250" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+      frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Create
+        route map</a></iframe>
+  </div>
+  <form (submit)="pushtoconfirm()">
+    <ion-item>
+      <ion-label>pick up</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>drop off</ion-label>
+      <ion-textarea type="text"></ion-textarea>
+    </ion-item>
+    <p>Airport Pickup</p>
+    <ion-list radio-group>
+      <ion-item>
+        <ion-label>Yes</ion-label>
+        <ion-radio value="yes"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>No</ion-label>
+        <ion-radio value="no"></ion-radio>
+      </ion-item>
+    </ion-list>
+    <p>meet and greet at baggage claim </p>
+
+    <ion-list radio-group>
+        <ion-item>
+          <ion-label>Yes</ion-label>
+          <ion-radio value="yes"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>No</ion-label>
+          <ion-radio value="no"></ion-radio>
+        </ion-item>
+      </ion-list>
+
+      <p>additional fee may apply to cover airport fee</p>
+
+      <ion-label>Total fair: 13$</ion-label>
+      
+    <ion-row>
+        <ion-col text-center>
+          <button ion-button block >
+            Book your ride
+          </button>
+        </ion-col>
+      </ion-row>
+  
+  </form>
+  <br />
+
+
+
+</ion-content>

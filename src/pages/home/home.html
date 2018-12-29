@@ -1,18 +1,54 @@
 <ion-header>
   <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
     <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+  
+  <img src="https://www.saferidecarservice.com/sites/all/themes/sras_design_second/img/mobile-logo.png">
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+  <form>
+    <ion-item>
+      <ion-label>Email</ion-label>
+      <ion-input type="email"></ion-input>
+    </ion-item>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col text-center>
+        <button ion-button block (click)="login()">
+          Login
+        </button>
+      </ion-col>
+    </ion-row>
+
+
+
+  </form>
+  <ion-row>
+    <ion-col text-center>
+      <H2 ion-button clear color="light" (click)="onForgotPassword()">
+        Create Account?
+      </H2>
+    </ion-col>
+
+    <ion-col text-center>
+      <H2 ion-button clear color="light" (click)="onForgotPassword()">
+        Forgot password?
+      </H2>
+    </ion-col>
+  </ion-row>
+  <p>or</p>
+  <hr>
+
+  <ion-col text-center>
+    <H2 ion-button clear color="light" (click)="onForgotPassword()">
+      Create Driver Account?
+    </H2>
+  </ion-col>
 </ion-content>

@@ -10,7 +10,9 @@ $font-path: "../assets/fonts";
 // rtl styles in your app. For more info, please see:
 // http://ionicframework.com/docs/theming/rtl-support/
 $app-direction: ltr;
-
+$background-ios-color: #27A8DB;
+$background-md-color: #27A8DB;
+$toolbar-background: rgb(77, 157, 189);
 
 @import "ionic.globals";
 
