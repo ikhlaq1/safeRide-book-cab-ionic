@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage,ViewController, NavController, NavParams } from 'ionic-angular';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the RegisterDriverPage page.
@@ -15,11 +16,23 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class RegisterDriverPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public viewCtrl: ViewController,public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad RegisterDriverPage');
   }
+  goBack() {
+    this.navCtrl
+      .setRoot(HomePage)
+      .then(() => {
 
+        const index = this.viewCtrl.index;
+
+        for (let i = index; i > 0; i--) {
+          this.navCtrl.remove(i);
+        }
+
+      });
+  }
 }

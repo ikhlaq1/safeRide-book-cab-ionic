@@ -15,6 +15,26 @@
     color: white;
     font-weight: 500;
   }
+
+  .i-header-text-and-back-btn{
+    
+    .toolbar-content{
+      display: flex;
+    }
+    .i-back-btn{
+      background-color: transparent;
+      box-shadow: none;
+      font-size: 19px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .title{
+      .toolbar-title{
+        // font-size: 17px;
+        // text-align: left;
+      }
+    }
+  }
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
