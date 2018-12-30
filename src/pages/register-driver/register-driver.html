@@ -7,12 +7,44 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>registerDriver</ion-title>
+    <ion-title style="text-align:center" >Become A Driver</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+    <form>
+        <ion-item no-padding class="user-input-wrap">
+           <ion-label class="icon-label"><i class="fa fa-user"></i></ion-label>
+           <ion-input placeholder="First Name" type="text"></ion-input>
+        </ion-item>
+        <ion-item no-padding class="user-input-wrap">
+            <ion-label class="icon-label"><i class="fa fa-user"></i></ion-label>
+            <ion-input placeholder="Last Name" type="text"></ion-input>
+         </ion-item>
+        <ion-item no-padding class="user-input-wrap">
+            <ion-label class="icon-label"><i class="fa fa-envelope"></i></ion-label>
+            <ion-input placeholder="Email" type="email"></ion-input>
+         </ion-item>
+         <ion-item no-padding class="user-input-wrap">
+            <ion-label class="icon-label"><i class="fa fa-phone"></i></ion-label>
+            <ion-input placeholder="Phone Number" type="number"></ion-input>
+         </ion-item>
+         <ion-item no-padding class="user-input-wrap">
+            <ion-label class="icon-label"><i class="fa fa-address-card"></i></ion-label>
+            <ion-input placeholder="Address" type="text"></ion-input>
+         </ion-item>
+        <ion-item no-padding class="user-input-wrap">
+           <ion-label class="icon-label"><i class="fas fa-lock"></i></ion-label>
+           <ion-input placeholder="Password" type="password"></ion-input>
+        </ion-item>
+        <ion-item no-padding class="user-input-wrap">
+            <ion-label class="icon-label"><i class="fas fa-lock"></i></ion-label>
+            <ion-input placeholder="Confirm Password" type="password"></ion-input>
+         </ion-item>
+        <ion-row>
+           <button  class="login-btn-bl" ion-button block (click)="login()"> Log in </button>
+        </ion-row>
+     </form>
 </ion-content>

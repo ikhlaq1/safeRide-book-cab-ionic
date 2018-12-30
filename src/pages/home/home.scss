@@ -1,4 +1,11 @@
 page-home {
+	::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+		color: #fff;
+	  }
+
+	.top-margin{
+		margin-top: 15%;
+	}
 	.logo-wrap {
 		text-align: center;
 		margin: 20px 0px 40px;

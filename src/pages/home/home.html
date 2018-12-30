@@ -1,23 +1,18 @@
-<ion-header>
-    <ion-navbar>
-       <ion-title>Home</ion-title>
-    </ion-navbar>
- </ion-header>
 
- <ion-content padding>
+ <ion-content class="top-margin" padding>
 
     <div class="logo-wrap">
-       <img class="logo-login"src="https://www.saferidecarservice.com/sites/all/themes/sras_design_second/img/mobile-logo.png">
+       <img class="logo-login" src="../../assets/imgs/mobile-logo.png">
     </div>
     
     <form>
        <ion-item no-padding class="user-input-wrap">
-          <ion-label class="icon-label"><i class="far fa-user-circle"></i></ion-label>
-          <ion-input type="email"></ion-input>
+          <ion-label class="icon-label"><i class="fa fa-envelope"></i></ion-label>
+          <ion-input placeholder="Email Address" type="email"></ion-input>
        </ion-item>
        <ion-item no-padding class="user-input-wrap">
           <ion-label class="icon-label"><i class="fas fa-lock"></i></ion-label>
-          <ion-input type="password"></ion-input>
+          <ion-input placeholder="Password" type="password"></ion-input>
        </ion-item>
        <ion-row>
           <button  class="login-btn-bl" ion-button block (click)="login()"> Log in </button>
@@ -26,7 +21,7 @@
 
     <ion-row>
        <ion-col col-6 text-center>
-          <button  class="left-btn-bl cm-btn" (click)="onForgotPassword()"> Create Account </button>
+          <button  class="left-btn-bl cm-btn" (click)="createNewAccount()"> Create Account </button>
        </ion-col>
        <ion-col col-6 text-center>
           <button  class="right-btn-bl cm-btn" (click)="onForgotPassword()">  Forgot password? </button>
@@ -36,7 +31,7 @@
     <h1 class="hr-line">or</h1>
 
     <ion-row>
-       <button  class="login-btn-bl" ion-button block (click)="onForgotPassword()"> Become a driver </button>
+       <button  class="login-btn-bl" ion-button block (click)="createDriverAccount()"> Become a driver </button>
     </ion-row>
     
  </ion-content>

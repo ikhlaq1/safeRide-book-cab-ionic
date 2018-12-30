@@ -1,6 +1,20 @@
 // http://ionicframework.com/docs/theming/
 
-
+.text-input::-moz-placeholder {
+    color: white;
+    font-weight: 500;
+  }
+  
+  .text-input:-ms-input-placeholder {
+    color: white;
+    font-weight: 500;
+  }
+  
+  .text-input::-webkit-input-placeholder {
+    text-indent: 0;
+    color: white;
+    font-weight: 500;
+  }
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
