@@ -28,7 +28,7 @@ export class MyApp {
       { title: 'My Bookings', component: 'HomePage' },
       { title: 'Share', component: 'SharescreenPage' },
       { title: 'support', component: 'SupportPage' },
-      { title: 'logout', component: HomePage }
+      { title: 'log out', component: HomePage }
     ];
 
   }
