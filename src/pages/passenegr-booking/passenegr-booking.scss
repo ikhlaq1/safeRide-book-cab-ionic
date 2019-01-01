@@ -1,88 +1,134 @@
 page-passenegr-booking {
-	.grid--row {
-		padding: 20px 5px 0px;
-	}
-	.wht-box {
-        margin: 0px;
-		height: 47px;
-        color: #fff;
-		font-size: 16px;
-		font-weight: 500;
-		letter-spacing: 1px;
-		border: 1px solid #fff;
-		text-transform: uppercase;
-	}
-	.label-f {
-		padding: 13px 10px;
-	}
-	.input-f {
-		padding-left: 15px;
-		input,
-		textarea {
-			text-transform: uppercase;
-		}
-	}
-	.ride-info-grid {
-		padding: 0px 10px 30px;
-		.heading-p {
-			color: #fff;
-			font-size: 14px;
-			letter-spacing: 0.5px;
-			text-transform: uppercase;
-		}
-	}
-	.user-checkbox-wrap {
-		.item-radio {
-            padding-left: 0px;
-			background-color: transparent;
-		}
-		.radio-icon {
-            width: 20px;
-			height: 20px;
-			border-radius: 0px;
-			border: 3px solid #fff;
-		}
-		.radio-md .radio-inner,.radio-ios .radio-checked .radio-inner {
-            top: 0;
-            left: 0;
-			width: 100%;
-			height: 100%;
-			border-radius: 0px;
-			background-color: #fff;
-		}
-		.radio-ios .radio-checked .radio-inner {
-			border-color: #fff;
-			transform: rotate(0);
-		}
-		.item-inner {
-            display: flex;
-			flex-direction: row-reverse;
-			border-bottom: none!important;
-		}
-		.label-txt {
-			color: #fff;
-		}
-	}
-	.center-box {
-		text-align: center;
-	}
-	.center-box .box-bt {
-        color: #ffff;
-		font-size: 20px;
-        box-shadow: none;
-		margin-bottom: 20px;
-		border: 2px solid #fff;
-		text-transform: uppercase;
-		background-color: transparent;
-	}
-	.total-label {
-		padding: 13px 30px;
-		text-align: center;
-		display: inline-block;
-	}
-	.book-ride-btn {
-		padding: 25px;
-		width: 85%;
-		margin: 0 auto;
-	}
+  .bg-image {
+    background-color: #54a7bf;
+    height: 170px;
+    width: 100%;
+    text-align: center;
+  }
+  .lower-image-background{
+	background-color: #717577;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+  }
+  .paragraph{
+    margin: 0%;
+    font-weight: bold;
+    padding: 0%;
+    font-size: large;
+    color: white;
+  }
+  .round-image img {
+    background-position: center center;
+    background-size: contain;
+    border-radius: 50%;
+    border: 3px solid;
+    border-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+  }
+
+  .grid--row {
+    padding: 20px 5px 0px;
+  }
+
+  .wht-box {
+    margin: 0px;
+    height: 47px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+  }
+
+  .label-f {
+    padding: 13px 10px;
+  }
+
+  .input-f {
+    padding-left: 15px;
+
+    input,
+    textarea {
+      text-transform: uppercase;
+    }
+  }
+
+  .ride-info-grid {
+    padding: 0px 10px 30px;
+
+    .heading-p {
+      color: #fff;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+  }
+
+  .user-checkbox-wrap {
+    .item-radio {
+      padding-left: 0px;
+      background-color: transparent;
+    }
+
+    .radio-icon {
+      width: 20px;
+      height: 20px;
+      border-radius: 0px;
+      border: 3px solid #fff;
+    }
+
+    .radio-md .radio-inner,
+    .radio-ios .radio-checked .radio-inner {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 0px;
+      background-color: #fff;
+    }
+
+    .radio-ios .radio-checked .radio-inner {
+      border-color: #fff;
+      transform: rotate(0);
+    }
+
+    .item-inner {
+      display: flex;
+      flex-direction: row-reverse;
+      border-bottom: none !important;
+    }
+
+    .label-txt {
+      color: #fff;
+    }
+  }
+
+  .center-box {
+    text-align: center;
+  }
+
+  .center-box .box-bt {
+    color: #ffff;
+    font-size: 20px;
+    box-shadow: none;
+    margin-bottom: 20px;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    background-color: transparent;
+  }
+
+  .total-label {
+    padding: 13px 30px;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .book-ride-btn {
+    padding: 25px;
+    width: 85%;
+    margin: 0 auto;
+  }
 }
