@@ -1,15 +1,15 @@
 <ion-header>
-    <ion-navbar>
-       <button ion-button menuToggle>
-          <ion-icon name="menu"></ion-icon>
-       </button>
-       <ion-title>Passenger Dashboard</ion-title>
-    </ion-navbar>
- </ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Book Driver</ion-title>
+  </ion-navbar>
+</ion-header>
 
- <ion-content>
-   
-   <div class="bg-image">
+<ion-content>
+
+  <!-- <div class="bg-image">
                <p style="padding-top:5px" class="paragraph">John Doe</p>
                <p class="paragraph"> Honda C4 Car</p>
       <ion-img src="../../assets/imgs/avatar2.png" class="round-image" 
@@ -24,67 +24,76 @@
     <div class="lower-image-background">
 
       
+    </div> -->
+  <div style="width: 100%"><iframe width="100%" height="250" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+      frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Create
+        route map</a></iframe>
+  </div>
+
+  <form (submit)="pushtoconfirm()">
+
+    <div class="grid--row">
+      <ion-row>
+
+        <ion-col col-12>
+          <ion-input class="input-f wht-box" placeholder="ENTER PICKUP LOCATION" type="text"></ion-input>
+        </ion-col>
+        <ion-col col-12>
+          <ion-textarea class="input-f wht-box" placeholder="ENTER DROP LOCATION" type="text"></ion-textarea>
+        </ion-col>
+        <ion-col col-11>
+          <ion-textarea class="input-f wht-box" placeholder="ENTER DRIVER CODE" type="text"></ion-textarea>
+        </ion-col>
+        <ion-col col-1 >
+          <ion-select interface="action-sheet" class="input-f wht-box  fa fa-sort-desc ">
+            <ion-option value="f">Sam Edwards  2018 Honda Civiv</ion-option>
+            <ion-option value="m">John Smith 2005 mercedez Benz</ion-option>
+          </ion-select>
+        </ion-col>
+        <!-- <ion-row>
+          <ion-col col-11>
+            <ion-textarea class="input-f wht-box" placeholder="ENTER DRIVER CODE" type="text"></ion-textarea>
+          </ion-col>
+          <ion-col col-1 >
+            <ion-select  class="input-f wht-box">
+              <ion-option value="f">Female</ion-option>
+              <ion-option value="m">Male</ion-option>
+            </ion-select>
+          </ion-col>
+
+        </ion-row> -->
+      </ion-row>
     </div>
-    <div style="width: 100%"><iframe width="100%" height="250" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
-       frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Create
-       route map</a></iframe>
+
+    <div class="ride-info-grid">
+      <p class="heading-p">Airport Pickup</p>
+      <ion-list radio-group class="user-checkbox-wrap">
+        <ion-item>
+          <ion-label class="label-txt">Yes</ion-label>
+          <ion-radio value="yes"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label class="label-txt">No</ion-label>
+          <ion-radio value="no"></ion-radio>
+        </ion-item>
+      </ion-list>
+      <p class="heading-p">meet and greet at baggage claim </p>
+      <ion-list radio-group class="user-checkbox-wrap">
+        <ion-item>
+          <ion-label class="label-txt">Yes</ion-label>
+          <ion-radio value="yes"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label class="label-txt">No</ion-label>
+          <ion-radio value="no"></ion-radio>
+        </ion-item>
+      </ion-list>
+      <p class="heading-p">additional fee may apply to cover airport fee</p>
+      <div class="center-box">
+        <ion-label class="total-label box-bt">Total fair: 13$</ion-label>
+        <button class="book-ride-btn box-bt" ion-button block> Book your ride </button>
+      </div>
     </div>
 
-    <form (submit)="pushtoconfirm()">
-
-       <div class="grid--row">
-          <ion-row>
-             <ion-col col-5>
-                <ion-label class="label-f wht-box">pick up</ion-label>
-             </ion-col>
-             <ion-col col-7>
-                <ion-input class="input-f wht-box" placeholder="ENTER PICKUP LOCATION" type="text"></ion-input>
-             </ion-col>
-             <ion-col col-5>
-                <ion-label class="label-f wht-box">drop off</ion-label>
-             </ion-col>
-             <ion-col col-7>
-                  <ion-input class="input-f wht-box" placeholder="ENTER DROP LOCATION" type="text"></ion-input>
-                <!-- <ion-textarea  class="input-f wht-box" placeholder="ENTER DROP LOCATION" type="text"></ion-textarea> -->
-             </ion-col>
-             <ion-col col-5>
-                <ion-label class="label-f wht-box">average</ion-label>
-             </ion-col>
-             <ion-col col-7>
-                <ion-input class="input-f wht-box" type="text"></ion-input>
-             </ion-col>
-          </ion-row>
-       </div>
-
-       <div class="ride-info-grid">
-          <p class="heading-p">Airport Pickup</p>
-          <ion-list radio-group class="user-checkbox-wrap">
-             <ion-item>
-                <ion-label class="label-txt">Yes</ion-label>
-                <ion-radio value="yes"></ion-radio>
-             </ion-item>
-             <ion-item>
-                <ion-label class="label-txt">No</ion-label>
-                <ion-radio value="no"></ion-radio>
-             </ion-item>
-          </ion-list>
-          <p class="heading-p">meet and greet at baggage claim </p>
-          <ion-list radio-group class="user-checkbox-wrap">
-             <ion-item>
-                <ion-label class="label-txt">Yes</ion-label>
-                <ion-radio value="yes"></ion-radio>
-             </ion-item>
-             <ion-item>
-                <ion-label class="label-txt">No</ion-label>
-                <ion-radio value="no"></ion-radio>
-             </ion-item>
-          </ion-list>
-          <p class="heading-p">additional fee may apply to cover airport fee</p>
-          <div class="center-box">
-             <ion-label class="total-label box-bt">Total fair: 13$</ion-label>
-             <button  class="book-ride-btn box-bt" ion-button block > Book your ride </button>
-          </div>
-       </div>
-
-    </form>
- </ion-content>
+  </form>
+</ion-content>
