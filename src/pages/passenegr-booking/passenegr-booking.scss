@@ -11,6 +11,10 @@ page-passenegr-booking {
     width: 100%;
     text-align: center;
   }
+  .select-md .select-placeholder {
+    color: #fff;
+}
+
   .paragraph{
     margin: 0%;
     font-weight: bold;
@@ -42,7 +46,19 @@ page-passenegr-booking {
     border: 1px solid #fff;
     text-transform: uppercase;
   }
-
+  .select-md .select-icon .select-icon-inner {
+    left: -7px;
+    top: 50%;
+    margin-top: -3px;
+    position: absolute;
+    /* width: 16px; */
+    height: 0;
+    border-top: 5px solid;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    color: #ffffff;
+    pointer-events: none;
+  }
   .label-f {
     padding: 13px 10px;
   }
