@@ -8,33 +8,13 @@
 </ion-header>
 
 <ion-content>
-
-  <!-- <div class="bg-image">
-               <p style="padding-top:5px" class="paragraph">John Doe</p>
-               <p class="paragraph"> Honda C4 Car</p>
-      <ion-img src="../../assets/imgs/avatar2.png" class="round-image" 
-    style="
-      height: 150px !important;
-      width: 150px !important;
-      background: none !important;
-      background-color :none !important;" (click)="presentActionSheet()">
-     </ion-img>
-     <p class="paragraph"> SS4 23</p>
-    </div>
-    <div class="lower-image-background">
-
-      
-    </div> -->
   <div style="width: 100%"><iframe width="100%" height="250" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
       frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Create
         route map</a></iframe>
   </div>
-
   <form (submit)="pushtoconfirm()">
-
     <div class="grid--row">
       <ion-row>
-
         <ion-col col-12>
           <ion-input class="input-f wht-box" placeholder="ENTER PICKUP LOCATION" type="text"></ion-input>
         </ion-col>
@@ -44,24 +24,12 @@
         <ion-col col-11>
           <ion-textarea class="input-f wht-box" placeholder="ENTER DRIVER CODE" type="text"></ion-textarea>
         </ion-col>
-        <ion-col col-1 >
+        <ion-col col-1>
           <ion-select interface="action-sheet" class="input-f wht-box  fa fa-sort-desc ">
-            <ion-option value="f">Sam Edwards  2018 Honda Civiv</ion-option>
+            <ion-option value="f">Sam Edwards 2018 Honda Civiv</ion-option>
             <ion-option value="m">John Smith 2005 mercedez Benz</ion-option>
           </ion-select>
         </ion-col>
-        <!-- <ion-row>
-          <ion-col col-11>
-            <ion-textarea class="input-f wht-box" placeholder="ENTER DRIVER CODE" type="text"></ion-textarea>
-          </ion-col>
-          <ion-col col-1 >
-            <ion-select  class="input-f wht-box">
-              <ion-option value="f">Female</ion-option>
-              <ion-option value="m">Male</ion-option>
-            </ion-select>
-          </ion-col>
-
-        </ion-row> -->
       </ion-row>
     </div>
 
@@ -90,10 +58,9 @@
       </ion-list>
       <p class="heading-p">additional fee may apply to cover airport fee</p>
       <div class="center-box">
-        <ion-label class="total-label box-bt">Total fair: 13$</ion-label>
+        <!-- <ion-label class="total-label box-bt">Total fair: 13$</ion-label> -->
         <button class="book-ride-btn box-bt" ion-button block> Book your ride </button>
       </div>
     </div>
-
   </form>
 </ion-content>

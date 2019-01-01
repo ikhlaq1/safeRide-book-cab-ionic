@@ -17,7 +17,7 @@ export class MyApp {
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
     this.pages = [
-      { title: 'Dashboard', component: 'PassenegrBookingPage' },
+      { title: 'Book Driver', component: 'PassenegrBookingPage' },
       { title: 'Edit profile', component: 'EditProfilePage' },
       { title: 'My Bookings', component: 'HomePage' },
       { title: 'Share', component: 'SharescreenPage' },

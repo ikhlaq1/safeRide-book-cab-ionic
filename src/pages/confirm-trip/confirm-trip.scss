@@ -1,3 +1,91 @@
 page-confirm-trip {
+  .bg-image {
+    background-color: #54a7bf;
+    height: 170px;
+    width: 100%;
+    text-align: center;
+  }
 
+  .lower-image-background {
+    background-color: #717577;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .paragraph {
+    margin: 0%;
+    font-weight: bold;
+    padding: 0%;
+    font-size: large;
+    color: white;
+  }
+
+  .round-image img {
+    background-position: center center;
+    background-size: contain;
+    border-radius: 50%;
+    border: 3px solid;
+    border-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+  }
+
+
+  .grid--row {
+    padding: 20px 5px 0px;
+  }
+
+  .wht-box {
+    margin: 0px;
+    height: 47px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+  }
+  .wht-box-label {
+    margin: 0px;
+    height: 47px;
+    width : 50%;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+  }
+  .label-f {
+    padding: 13px 10px;
+  }
+
+  .input-f {
+    text-align: center;
+    padding-top: 13px;
+    textarea {
+      text-transform: uppercase;
+    }
+  }
+
+  .center-box {
+    text-align: center;
+  }
+
+  .center-box .box-bt {
+    color: #ffff;
+    font-size: 20px;
+    box-shadow: none;
+    margin-bottom: 20px;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    background-color: transparent;
+  }
+
+  .book-ride-btn {
+    padding: 25px;
+    width: 85%;
+    margin: 0 auto;
+  }
 }
