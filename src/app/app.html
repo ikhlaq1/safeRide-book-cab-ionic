@@ -7,6 +7,14 @@
     </ion-header>
   
     <ion-content>
+      <div class="passenger-profile-wrap">
+        <div class="img-box">
+          <img src="../../assets/imgs/avatar2.png" class="avatar-img" alt="">
+        </div>
+        <div class="name-box">
+          <p class="avatar-name">usman shaikh</p>
+        </div>
+      </div>
       <ion-list>
         <button class="menu-btn-list" menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
           {{p.title}}
@@ -15,6 +23,7 @@
     </ion-content>
   
   </ion-menu>
+
 </div>
 
 <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->

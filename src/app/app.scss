@@ -34,6 +34,31 @@
 }
 
 .app-menu-wrap {
+	.passenger-profile-wrap {
+		display: flex;
+		padding: 20px 10px;
+		align-items: center;
+		background-color: #a5d7e8;
+		.img-box {
+			width: 40%;
+		}
+		.avatar-img{
+			width: 84px;
+			height: 84px;
+			border-radius: 50%;
+		}
+		.name-box {
+			width: 60%;
+		}
+		.avatar-name{
+			color: #000;
+			font-weight: bold;
+			margin-left: 10px;
+			display: inline-block;
+			text-transform: uppercase;
+			border-bottom: 2px solid #000;
+		}
+	}
 	.menu-inner {
 		width: 230px;
 	}
