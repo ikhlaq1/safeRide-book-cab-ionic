@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Driver Agreement </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <form (ngSubmit)="agree()" [formGroup]="agreeForm">
+    <ion-row>
+      <ion-card>
+        <p>
+          <ion-checkbox style="padding-right:10px;" formControlName="onlineplatform"></ion-checkbox> I understand that safe ride car service is
+          only an online booking platform and they aren’t responsible
+          in any way for helping to find drivers passengers. I understand it’s my own responsibility as an
+          independent contractor when using this platform to find my own passengers by networking while driving for
+          other rideshare companies and giving out my driver code to all potential passengers.
+        </p>
+
+      </ion-card>
+      <ion-card>
+        <p>
+          <ion-checkbox style="padding-right:10px;" formControlName="minfare"></ion-checkbox> I know and accept that the fare price is
+          automatically set at $1.50 per mile with an $8.00 minimum fare
+          charge on the safe ride platform. I know it's my responsibility to collect the fare myself via Cash
+          and/or Venmo directly from the passenger at the time of drop-off. It’s also my responsibility to cancel
+          any rides I can't service.
+        </p>
+      </ion-card>
+      <ion-card>
+
+        <p>
+          <ion-checkbox style="padding-right:10px;" formControlName="payment"></ion-checkbox> I understand in order to use the safe ride car
+          service online booking platform I need to activate my
+          driver code membership. I understand the monthly membership fee is $40 and that it will stay in effect
+          for a minimum of three (3) months and then will become month to month thereafter and/or until I send a
+          cancellation notice to safe ride car service via email at saferidesd@gmail.com
+        </p>
+
+      </ion-card>
+      <ion-card>
+        <div>
+          <p>
+            <ion-checkbox style="padding-right:10px;" formControlName="identify"></ion-checkbox>I, {{profileData}} authorize safe ride car service
+            to automatically charge my debit/credit card in the
+            amount of $40.00 in payment of my monthly membership fee. I, ikhlaq khan also authorize safe ride car
+            service to automatically charge my debit/credit card every month thereafter, until I decide to cancel my
+            membership in which I’ll send my cancellation notice to safe ride car service via email at
+            saferidesd@gmail.com
+          </p>
+        </div>
+      </ion-card>
+
+      <p class="date-text" >Date: {{today | date}}</p>
+    </ion-row>
+    <ion-row>
+      <ion-col class="signup-col">
+        <div class="center-box">
+          <button type="submit" class="book-ride-btn box-bt"  ion-button block>Next</button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

@@ -90,4 +90,9 @@
         <variable name="API_KEY_FOR_IOS" value="AIzaSyBar1Jn3w_zt5WJFIUGMM5wDPhdihQxMkU" />
     </plugin>
     <engine name="android" spec="7.1.4" />
+    <plugin name="cordova-plugin-x-socialsharing" spec="5.4.3">
+        <variable name="ANDROID_SUPPORT_V4_VERSION" value="24.1.1+" />
+    </plugin>
+    <plugin name="cordova-sqlite-storage" spec="2.6.0" />
+    <plugin name="cordova-plugin-file" spec="6.0.1" />
 </widget>

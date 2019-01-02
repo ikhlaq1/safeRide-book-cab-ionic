@@ -3,6 +3,7 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
+import { DriverAgreementPage } from '../pages/driver-agreement/driver-agreement';
 
 @Component({
   templateUrl: 'app.html'
@@ -19,9 +20,10 @@ export class MyApp {
     this.pages = [
       { title: 'Book Driver', component: 'PassenegrBookingPage' },
       { title: 'Edit profile', component: 'EditProfilePage' },
-      { title: 'My Bookings', component: 'HomePage' },
+      { title: 'My Bookings', component: 'MybookingPage' },
       { title: 'Share', component: 'SharescreenPage' },
       { title: 'support', component: 'SupportPage' },
+      { title: 'SERVICE', component: 'DriverAgreementPage'},
       { title: 'log out', component: HomePage }
     ];
 
