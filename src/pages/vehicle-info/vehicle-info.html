@@ -1,20 +1,35 @@
-<!--
-  Generated template for the VehicleInfoPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-  <button ion-button menuToggle>
-    <ion-icon name="menu"></ion-icon>
-  </button>
   <ion-navbar>
-    <ion-title>vehicleInfo</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Vehicle Info</ion-title>
   </ion-navbar>
-
 </ion-header>
 
-
-<ion-content padding>
-
+<ion-content class="top-margin" padding>
+    <form>
+        <ion-item no-padding class="user-input-wrap">
+          <ion-input placeholder="Enter Vehicle Year" type="text"></ion-input>
+        </ion-item>
+        <ion-item no-padding class="user-input-wrap">
+          <ion-input placeholder="Enter Vehicle Make" type="text"></ion-input>
+        </ion-item>
+        <ion-item no-padding class="user-input-wrap">
+          <ion-input placeholder="Enter Vehicle Model" type="text"></ion-input>
+        </ion-item>
+        <ion-item no-padding class="user-input-wrap">
+          <ion-input  placeholder="Enter Vehicle Color" type="text"></ion-input>
+        </ion-item>
+        <ion-item no-padding class="user-input-wrap">
+          <ion-input placeholder="Enter License Plate #" type="text"></ion-input>
+        </ion-item>
+        <ion-item no-padding class="user-input-wrap">
+          <ion-label class="icon-label">Upload Image</ion-label>
+        </ion-item>
+   
+        <div class="center-box">
+          <button class="book-ride-btn box-bt" (click)="login()" ion-button block> Book your ride </button>
+        </div>
+      </form>
 </ion-content>

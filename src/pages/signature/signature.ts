@@ -106,8 +106,7 @@ export class SignaturePage {
     }
   }
   agree() {
-    this.saveCanvasImage();
-    // this.addInfo()
+    //this.saveCanvasImage();
   }
   ionViewDidEnter() {
     let itemHeight = this.fixedContainer.nativeElement.offsetHeight;
@@ -116,72 +115,7 @@ export class SignaturePage {
     itemHeight = Number.parseFloat(scroll.style.marginTop.replace("px", "")) + itemHeight;
     scroll.style.marginTop = itemHeight + 'px';
   }
-  startDrawing(ev) {
-    var canvasPosition = this.canvasElement.getBoundingClientRect();
-    this.saveX = ev.touches[0].pageX - canvasPosition.x;
-    this.saveY = ev.touches[0].pageY - canvasPosition.y;
-  }
 
-  moved(ev) {
-    var canvasPosition = this.canvasElement.getBoundingClientRect();
-    let ctx = this.canvasElement.getContext('2d');
-    let currentX = ev.touches[0].pageX - canvasPosition.x;
-    let currentY = ev.touches[0].pageY - canvasPosition.y;
-    ctx.lineJoin = 'round';
-    ctx.lineWidth = 5;
-    ctx.beginPath();
-    ctx.moveTo(this.saveX, this.saveY);
-    ctx.lineTo(currentX, currentY);
-    ctx.closePath();
-    ctx.stroke();
-    this.saveX = currentX;
-    this.saveY = currentY;
-  }
-
-  saveCanvasImage() {
-    this.loading.present();
-    var dataUrl = this.canvasElement.toDataURL();
-    let ctx = this.canvasElement.getContext('2d');
-    ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height); // Clears the canvas
-    let name = new Date().getTime() + '.png';
-    let path = this.file.dataDirectory;
-    let options: IWriteOptions = { replace: true };
-    var data = dataUrl.split(',')[1];
-    let blob = this.b64toBlob(data, 'image/png');
-    // this.uploadToFirebase(blob).then((uploadSnapshot: any) => {
-    //   this.presentAlert("Signature Uploaded Succesfully")
-    //   return this.saveToDatabase(uploadSnapshot);//store reference to storage in database
-    // }).then((_uploadSnapshot: any) => {
-    //   this.presentAlert('file saved to asset catalog successfully  ');
-
-    // }, (_error) => {
-    //   this.presentAlert('Error ' + (_error.message || _error));
-    //   this.loading.dismiss();
-    // });
-  }
-  
-  b64toBlob(b64Data, contentType) {
-    contentType = contentType || '';
-    var sliceSize = 512;
-    var byteCharacters = atob(b64Data);
-    var byteArrays = [];
-
-    for (var offset = 0; offset < byteCharacters.length; offset += sliceSize) {
-      var slice = byteCharacters.slice(offset, offset + sliceSize);
-
-      var byteNumbers = new Array(slice.length);
-      for (var i = 0; i < slice.length; i++) {
-        byteNumbers[i] = slice.charCodeAt(i);
-      }
-
-      var byteArray = new Uint8Array(byteNumbers);
-
-      byteArrays.push(byteArray);
-    }
-
-    var blob = new Blob(byteArrays, { type: contentType });
-    return blob;
-  }
 
   // uploadToFirebase(imgBlob: any) {
   //   var randomNumber = Math.floor(Math.random() * 256);

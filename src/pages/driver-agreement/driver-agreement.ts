@@ -41,10 +41,7 @@ export class DriverAgreementPage {
       this.presentAlert('Please check all the checkboxes');
       return false;
     }
-    if (this.agreeForm.controls.payment.value == false) {
-      this.presentAlert('Please check all the checkboxes');
-      return false;
-    } if (this.agreeForm.controls.minfare.value == false) {
+     if (this.agreeForm.controls.minfare.value == false) {
       this.presentAlert('Please check all the checkboxes');
       return false;
     } if (this.agreeForm.controls.onlineplatform.value == false) {

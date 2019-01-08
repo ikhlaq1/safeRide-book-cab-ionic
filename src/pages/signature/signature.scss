@@ -1,4 +1,7 @@
 page-signature {
+    .scroll-content{
+        // margin-top:0px!important;
+    }
     .head{
         padding: 10px;
         text-align: center;
@@ -17,5 +20,9 @@ page-signature {
         padding: 25px;
         width: 85%;
         margin: 0 auto;
+      }
+      .signature--box--wrap{
+          position: relative;
+          width: 100%;
       }
 }

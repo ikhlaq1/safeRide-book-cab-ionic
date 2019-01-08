@@ -8,34 +8,43 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content class="top-margin" padding>
 
-  <!-- Cards containing quotes -->
-  <ion-card >
+  <ion-row >
+    <button  class="login-btn-bx " ion-button block (click)="regularShare(i)"><ion-icon class="my-icon" name="share"></ion-icon> Share</button>
+  </ion-row>
 
-    <ion-grid>
-      <ion-row>
-        <ion-col>
-          <button ion-button icon-only (click)="regularShare(i)" color="primary" clear>
-        <ion-icon class="share-icon" name="share"></ion-icon>
-      </button>
-        </ion-col>
-        <ion-col>
+  <ion-row>
+    <button class="login-btn-bx ka" ion-button block (click)="facebookShare(i)">  <ion-icon class="my-icon" name="logo-facebook"></ion-icon>Kakao Talk</button>
+  </ion-row>
+  <ion-row>
+    <button class="login-btn-bx we" ion-button block (click)="facebookShare(i)">  <ion-icon class="my-icon" name="logo-wechat"></ion-icon>We chat</button>
+  </ion-row>
+  <ion-row>
+    <button class="login-btn-bx fb" ion-button block (click)="facebookShare(i)">  <ion-icon class="my-icon" name="logo-facebook"></ion-icon>Facebook</button>
+  </ion-row>
+
+  <ion-row>
+    <button class="login-btn-bx wa" ion-button block (click)="whatsappShare(i)"> <ion-icon class="my-icon" name="logo-whatsapp"></ion-icon>Whatsapp</button>
+  </ion-row>
+
+  <ion-row>
+    <button class="login-btn-bx tw" ion-button block (click)="twitterShare(i)"> <ion-icon class="my-icon" name="logo-twitter"></ion-icon>Twitter</button>
+  </ion-row>
+
+  <!-- <ion-col>
           <button ion-button icon-only (click)="whatsappShare(i)" color="primary" clear>
-        <ion-icon class="share-icon" name="logo-whatsapp"></ion-icon>
-      </button>
+            <ion-icon class="share-icon" name="logo-whatsapp"></ion-icon>
+          </button>
         </ion-col>
         <ion-col>
           <button ion-button icon-only (click)="facebookShare(i)" color="primary" clear>
-        <ion-icon  class="share-icon" name="logo-facebook"></ion-icon>
-      </button>
+            <ion-icon class="share-icon" name="logo-facebook"></ion-icon>
+          </button>
         </ion-col>
         <ion-col>
           <button ion-button icon-only (click)="twitterShare(i)" color="primary" clear>
-        <ion-icon class="share-icon" name="logo-twitter"></ion-icon>
-      </button>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </ion-card>
+            <ion-icon class="share-icon" name="logo-twitter"></ion-icon>
+          </button>
+        </ion-col> -->
 </ion-content>

@@ -11,53 +11,69 @@
 
 
 <ion-content padding>
-
-  <div #fixedContainer ion-fixed>
-    <form (ngSubmit)="agree()" [formGroup]="signatureForm">
-      <ion-card>
+  <form (ngSubmit)="agree()" [formGroup]="signatureForm">
+    <ion-card>
 
 
-        <p padding><strong>TO CONSENT</strong> to the release of background information for employment-related purposes
-          by
-          General Information Service, INC.</p>
-      </ion-card>
-      <ion-card>
-        <div padding>
-          <ion-checkbox (ionChange)="iconsent($event)" formControlName="iconsent"></ion-checkbox><strong padding>I
-            CONSENT</strong><br><br>
-          <div *ngIf="showIamsureConsent">
-            <ion-checkbox (ionChange)="iamsureconsent($event)" formControlName="iamsureconsent"></ion-checkbox><strong
-              padding>I Am Sure i want to CONSENT</strong>
-          </div>
+      <p padding><strong>TO CONSENT</strong> to the release of background information for employment-related purposes
+        by
+        General Information Service, INC.</p>
+    </ion-card>
+    <ion-card>
+      <div padding>
+        <ion-checkbox (ionChange)="iconsent($event)" formControlName="iconsent"></ion-checkbox><strong padding>I
+          CONSENT</strong><br><br>
+        <div *ngIf="showIamsureConsent">
+          <ion-checkbox (ionChange)="iamsureconsent($event)" formControlName="iamsureconsent"></ion-checkbox><strong
+            padding>I Am Sure i want to CONSENT</strong>
         </div>
-      </ion-card>
-      <ion-card>
+      </div>
+    </ion-card>
+    <ion-card>
 
-        <p padding><strong>TO DECLINE</strong> the release of background information will result in your application
-          for
-          employment being withdrawn from Consideration</p>
-      </ion-card>
-      <ion-card>
-        <div padding>
-          <ion-checkbox (ionChange)="idecline($event)" formControlName="idecline"></ion-checkbox><strong padding>I
-            DECLINE</strong><br>
+      <p padding><strong>TO DECLINE</strong> the release of background information will result in your application
+        for
+        employment being withdrawn from Consideration</p>
+    </ion-card>
+    <ion-card>
+      <div padding>
+        <ion-checkbox (ionChange)="idecline($event)" formControlName="idecline"></ion-checkbox><strong padding>I
+          DECLINE</strong><br>
+      </div>
+    </ion-card>
+    <ion-card>
+      <div padding>
+        <ion-checkbox></ion-checkbox>
+        <p padding><strong>I certify</strong> I am the person identified above, and I understand that clicking “I
+          Accept” below constitutes my electronic signature to the agreement above.*
+        </p>
+      </div>
+    </ion-card>
+    <!-- <ion-card>
+      <div padding>
+        <ion-checkbox ></ion-checkbox>
+        <p padding> I certify I am the person identified above, and I understand that clicking “I Accept” below
+          constitutes my electronic signature to the agreement above.*</p><br>
+      </div>
+    </ion-card> -->
+    <ion-card>
+      <h3 class="head">Sign below to confirm agreement </h3>
+    </ion-card>
+    <!-- <button type="submit" [disabled]="!enableButton" ion-button full class="submit-btn">Confirm Agreement</button> -->
+
+    <ion-row>
+      <ion-col class="signup-col">
+        <div class="center-box">
+          <button type="submit" [disabled]="!enableButton" class="book-ride-btn box-bt" ion-button block>I Accept</button>
         </div>
-      </ion-card>
-      <ion-card>
-        <h3 class="head">Sign below to confirm agreement </h3>
-      </ion-card>
-      <canvas style="background:white" #imageCanvas (touchstart)="startDrawing($event)" (touchmove)="moved($event)"></canvas>
-      <!-- <button type="submit" [disabled]="!enableButton" ion-button full class="submit-btn">Confirm Agreement</button> -->
+      </ion-col>
+    </ion-row>
+  </form>
 
-      <ion-row>
-          <ion-col class="signup-col">
-            <div class="center-box">
-              <button type="submit" [disabled]="!enableButton"  class="book-ride-btn box-bt"  ion-button block>Next</button>
-            </div>
-          </ion-col>
-        </ion-row>
-    </form>
-
+  <div #fixedContainer>
+    <div class="signature--box--wrap">
+        <canvas class="sign--box" style="background:white" #imageCanvas (touchstart)="startDrawing($event)" (touchmove)="moved($event)"></canvas>
+    </div>
   </div>
   <!-- <ion-list *ngIf="storedImages.length > 0">
           <ion-list-header>Previous Drawings</ion-list-header>

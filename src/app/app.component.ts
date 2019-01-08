@@ -4,6 +4,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { DriverAgreementPage } from '../pages/driver-agreement/driver-agreement';
+import { VehicleInfoPage } from '../pages/vehicle-info/vehicle-info';
 
 @Component({
   templateUrl: 'app.html'
@@ -23,7 +24,8 @@ export class MyApp {
       { title: 'My Bookings', component: 'MybookingPage' },
       { title: 'Share', component: 'SharescreenPage' },
       { title: 'support', component: 'SupportPage' },
-      { title: 'SERVICE', component: 'DriverAgreementPage'},
+      { title: 'Vehicle Info', component: 'VehicleInfoPage' },
+      { title: 'Service ', component: 'DriverAgreementPage'},
       { title: 'log out', component: HomePage }
     ];
 

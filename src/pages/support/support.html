@@ -5,16 +5,35 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-  <button ion-button menuToggle>
-    <ion-icon name="menu"></ion-icon>
-  </button>
   <ion-navbar>
-    <ion-title>support</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Support</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content class="top-margin" padding>
+  <div *ngIf="activate">
+    <ion-row class="top-margin-2">
+      <button class="login-btn-bl" ion-button block (click)="activateAccount()">Activate Account</button>
+    </ion-row>
+  </div>
 
+  <div *ngIf="deactivate">
+    <ion-row  class="top-margin-2">
+      <button class="login-btn-bl" ion-button block (click)="deactivateAccount()">Deactivate Account</button>
+    </ion-row>
+  </div>
+
+
+  <ion-row class="top-margin-2">
+    <button class="login-btn-bl" ion-button block (click)="login()">Delete Account</button>
+  </ion-row>
+
+  <ion-row class="top-margin-2">
+    <button class="login-btn-bl" ion-button block (click)="login()">Email APP support</button>
+  </ion-row>
 </ion-content>
